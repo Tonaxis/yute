@@ -1,0 +1,104 @@
+.markdown {
+    ul, ol {
+        margin-left: 20px;
+    }
+
+    blockquote {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 3px;
+            border-radius: 99999999px;
+            background-color: var(--md-line);
+        }
+
+        & * {
+            margin-left: 15px;
+        }
+    }
+
+    a {
+        color: var(--primary);
+    }
+
+    table {
+        width: 100%;
+        background-color: var(--md-line);
+        border-radius: 5px;
+
+        :is(td, th) {
+            padding: 0.3em;
+        }
+
+        th {
+            background-color: var(--md-line);
+            color: var(--background-light);
+        }
+    
+        tr {
+            &:nth-child(even) {
+                background-color: var(--background);
+            }
+    
+            &:nth-child(odd) {
+                background-color: var(--background-light);
+            }
+    
+            &:last-child {
+                td:first-child {
+                    border-radius: 0 0 0 3px;
+                }
+    
+                td:last-child {
+                    border-radius: 0 0 3px 0;
+                }
+            }
+        }
+    }
+
+    .md-code {
+        position: relative;
+        padding-top: 30px;
+        border-radius: 5px;
+        background-color: var(--md-code-bg);
+
+        .lang {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            color: var(--muted);
+        }
+
+        pre {
+            border-radius: 0 0 5px 5px;
+            border-top: var(--md-line) solid 1px;
+            background-color: var(--md-code-bg) !important;
+
+            code {
+                filter: saturate(3);
+            }
+        }
+
+        .copy {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border: none;
+            color: var(--muted);
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    code {
+        border-radius: 5px;
+        background-color: var(--md-code-bg);
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

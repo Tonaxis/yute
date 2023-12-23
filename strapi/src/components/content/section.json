@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_content_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

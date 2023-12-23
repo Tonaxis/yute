@@ -1,0 +1,47 @@
+@property --background-dark {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #979797;
+}
+
+@property --background {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #c3c3c3;
+}
+
+@property --background-light {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #d3d3d3;
+}
+
+@property --primary {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #8d088d;
+}
+
+@property --text {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #131313;
+}
+
+@property --muted {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #616161;
+}
+
+@property --md-line {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #979797;
+}
+
+@property --md-code-bg {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #e5e5e5;
+}
