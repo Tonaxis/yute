@@ -22,9 +22,9 @@ cd guide-cms
 make run-dev
 ```
 
-Maintenant il va falloir récupérer un API token, pour cela il faudra se randre sur le pannel d'administration de **Strapi** sur l'url [http://localhost:1337/admin/](localhost:1337), dans __Settings__ > __API Token__ > __Create new API Token__ cela devrait mener sur cette page [http://localhost:1337/admin/settings/api-tokens/create](localhost:1337/admin/settings/api-tokens/create)
+Maintenant il va falloir récupérer un API token, pour cela il faudra se randre sur le pannel d'administration de **Strapi** sur l'url [localhost:1337](http://localhost:1337/admin/), dans __Settings__ > __API Token__ > __Create new API Token__ cela devrait mener sur cette page [localhost:1337/admin/settings/api-tokens/create](http://localhost:1337/admin/settings/api-tokens/create)
 
-![[./img/strapi-api-token.png]]
+![](./img/strapi-api-token.png)
 
 Après avoir copié le Token, il suffit de le coller dans le fichier ``.env`` se trouvant dans le dossier guide, dans la variable ``REACT_APP_STRAPI_API_KEY``
 
