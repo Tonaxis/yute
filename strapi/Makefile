@@ -28,6 +28,6 @@ deploy:
 
 env:
 	@echo Strapi environment variables:
-	@del .env
+	@if exist .env del .env
 	@copy .env.default .env
 

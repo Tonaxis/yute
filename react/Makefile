@@ -29,6 +29,6 @@ deploy:
 
 env:
 	@echo App environment:
-	@del .env
+	@if exist .env del .env
 	@copy .env.default .env
 
