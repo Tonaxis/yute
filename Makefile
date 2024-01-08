@@ -2,30 +2,30 @@
 
 install:
 	@echo Installing App and CMS...
-	@cd guide-cms && make install
-	@cd guide && make install
+	@cd strapi && make install
+	@cd react && make install
 
 run-dev:
 	@echo Running App and CMS in development mode...
-	@cd guide-cms && make run-dev
-	@cd guide && make run-dev
+	@cd strapi && make run-dev
+	@cd react && make run-dev
 
 build:
 	@echo Building App and CMS...
-	@cd guide-cms && make build
-	@cd guide && make build
+	@cd strapi && make build
+	@cd react && make build
 
 run-build:
 	@echo Running App and CMS in production mode...
-	@cd guide-cms && make run-build
-	@cd guide && make run-build
+	@cd strapi && make run-build
+	@cd react && make run-build
 
 clean:
 	@echo Cleaning App and CMS...
-	@cd guide-cms && make clean
-	@cd guide && make clean
+	@cd strapi && make clean
+	@cd react && make clean
 
 deploy:
 	@echo Deploying App and CMS...
-	@cd guide-cms && make deploy
-	@cd guide && make deploy
+	@cd strapi && make deploy
+	@cd react && make deploy
