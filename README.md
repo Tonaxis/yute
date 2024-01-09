@@ -18,7 +18,7 @@ Il est possible défectuer cette commandes que pour l'une des 2 parties du proje
 
 Ensuite il faudra lancer **Strapi**
 ```sh
-cd guide-cms
+cd strapi
 make run-dev
 ```
 
